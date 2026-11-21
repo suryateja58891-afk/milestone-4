@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Three-Question Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="quiz-card">
+    <h1>Quick Knowledge Quiz</h1>
+    <p class="intro">Answer all three questions and view your final score.</p>
+
+    <form id="quizForm">
+      <section class="question">
+        <h2>1. Which language is used to structure a web page?</h2>
+        <label><input type="radio" name="q1" value="a"> CSS</label>
+        <label><input type="radio" name="q1" value="b"> HTML</label>
+        <label><input type="radio" name="q1" value="c"> JavaScript</label>
+      </section>
+
+      <section class="question">
+        <h2>2. Which language is mainly used to style web pages?</h2>
+        <label><input type="radio" name="q2" value="a"> CSS</label>
+        <label><input type="radio" name="q2" value="b"> Python</label>
+        <label><input type="radio" name="q2" value="c"> SQL</label>
+      </section>
+
+      <section class="question">
+        <h2>3. Which language adds interactivity to a web page?</h2>
+        <label><input type="radio" name="q3" value="a"> HTML</label>
+        <label><input type="radio" name="q3" value="b"> JavaScript</label>
+        <label><input type="radio" name="q3" value="c"> CSS</label>
+      </section>
+
+      <button type="submit">Submit Answers</button>
+    </form>
+
+    <div id="result" class="result" aria-live="polite"></div>
+    <button id="restartBtn" class="restart" type="button" hidden>Try Again</button>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
